@@ -1,0 +1,18 @@
+[
+  {
+    "key": "SINGLE12345678901",
+    "hwid": "HWID-USER1-MACHINE123",
+    "type": "single",
+    "expires": "2024-12-31T23:59:59"
+  },
+  {
+    "key": "MULTI123456789012",
+    "type": "multi", 
+    "expires": "2024-06-30T23:59:59"
+  },
+  {
+    "key": "UNLIMITED12345678",
+    "type": "unlimited",
+    "unlimited": true
+  }
+]
