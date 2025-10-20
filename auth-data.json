@@ -7,12 +7,18 @@
   },
   {
     "key": "MULTI123456789012",
-    "type": "multi", 
+    "type": "multi",
     "expires": "2024-06-30T23:59:59"
   },
   {
     "key": "UNLIMITED12345678",
     "type": "unlimited",
     "unlimited": true
+  },
+  {
+    "key": "EKL6TJ7DVGPRXDA8",
+    "hwid": "",
+    "type": "single",
+    "expires": "2025-11-19T18:03:23.143963"
   }
 ]
