@@ -1,7 +1,7 @@
 [
   {
     "key": "SINGLE12345678901",
-    "hwid": "HWID-USER1-MACHINE123",
+    "hwid": "",
     "type": "single",
     "expires": "2024-12-31T23:59:59"
   },
