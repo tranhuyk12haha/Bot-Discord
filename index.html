@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZDX VN - Quản Lý Key</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rowdies:wght@300;400&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #7289da;
+            --success-color: #00ff00;
+            --warning-color: #ffa500;
+            --danger-color: #ff0000;
+            --dark-color: #2c2f33;
+            --darker-color: #23272a;
+            --light-color: #99aab5;
+            --text-color: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a2a, #1a1a3a, #2a0a2a);
+            font-family: 'VT323', monospace;
+            color: #00ffcc;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Particle Background Animation */
+        #particle-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 25px #00ffcc, inset 0 0 15px #00ffcc;
+            animation: holo-pulse 3s infinite;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #00ffcc;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, transparent 70%);
+            animation: holo-shine 5s infinite;
+        }
+        
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 42px;
+            color: #ff0066;
+            text-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066;
+            margin-bottom: 10px;
+            animation: neon-glow 2s infinite alternate;
+            position: relative;
+            display: inline-block;
+            padding: 10px 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            border: 2px solid #ff0066;
+            box-shadow: 0 0 20px rgba(255, 0, 102, 0.5);
+        }
+        
+        @keyframes neon-glow {
+            0%, 100% { 
+                text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066; 
+                box-shadow: 0 0 15px rgba(255, 0, 102, 0.5);
+            }
+            50% { 
+                text-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066; 
+                box-shadow: 0 0 25px rgba(255, 0, 102, 0.7);
+            }
+        }
+        
+        @keyframes holo-shine {
+            0% { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+            100% { transform: translateX(50%) translateY(50%) rotate(360deg); }
+        }
+        
+        @keyframes holo-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 25px #00ffcc, inset 0 0 15px #00ffcc; 
+                border-color: #00ffcc;
+            }
+            50% { 
+                box-shadow: 0 0 35px #00ffcc, inset 0 0 20px #00ffcc; 
+                border-color: #00ccaa;
+            }
+        }
+        
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #00ffcc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+        }
+        
+        .tab-container {
+            display: flex;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #00ffcc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+        }
+        
+        .tab {
+            padding: 12px 20px;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            transition: all 0.3s ease;
+            color: #00ffcc;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .tab:hover {
+            background-color: rgba(0, 255, 204, 0.2);
+            text-shadow: 0 0 10px #00ffcc;
+        }
+        
+        .tab.active {
+            background-color: rgba(0, 255, 204, 0.4);
+            font-weight: bold;
+            text-shadow: 0 0 10px #00ffcc;
+            box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+        
+        .content-section {
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #00ffcc;
+            box-shadow: 0 0 25px #00ffcc, inset 0 0 15px #00ffcc;
+            animation: holo-pulse 3s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, transparent 70%);
+            animation: holo-shine 5s infinite;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid #00ffcc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #00ffcc;
+            font-family: 'Rowdies', cursive;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #00ffcc;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #00ffcc;
+            font-family: 'VT323', monospace;
+            font-size: 18px;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+        
+        button {
+            background: transparent;
+            color: #00ffcc;
+            border: 2px solid #00ffcc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 10px #00ffcc;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        button:hover {
+            background: #00ffcc;
+            color: #000;
+            box-shadow: 0 0 20px #00ffcc;
+            text-shadow: none;
+        }
+        
+        button.success {
+            border-color: #00ff00;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        button.success:hover {
+            background: #00ff00;
+            color: #000;
+            box-shadow: 0 0 20px #00ff00;
+        }
+        
+        button.warning {
+            border-color: #ffa500;
+            color: #ffa500;
+            text-shadow: 0 0 10px #ffa500;
+        }
+        
+        button.warning:hover {
+            background: #ffa500;
+            color: #000;
+            box-shadow: 0 0 20px #ffa500;
+        }
+        
+        button.danger {
+            border-color: #ff0000;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+        }
+        
+        button.danger:hover {
+            background: #ff0000;
+            color: #000;
+            box-shadow: 0 0 20px #ff0000;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .result-area {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            border: 1px solid;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .result-area.success {
+            background-color: rgba(0, 255, 0, 0.1);
+            border-color: #00ff00;
+            display: block;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        }
+        
+        .result-area.error {
+            background-color: rgba(255, 0, 0, 0.1);
+            border-color: #ff0000;
+            display: block;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+        
+        .key-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .key-item {
+            padding: 10px;
+            border-bottom: 1px solid rgba(0, 255, 204, 0.3);
+            font-family: 'VT323', monospace;
+            font-size: 18px;
+        }
+        
+        .key-item:last-child {
+            border-bottom: none;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .pagination button {
+            margin: 0 5px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #00ffcc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #00ffcc;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: #ff0066;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 0 10px #ff0066;
+        }
+        
+        @media (max-width: 768px) {
+            .tab-container {
+                flex-direction: column;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particle-bg"></canvas>
+    
+    <div class="container">
+        <header>
+            <h1>ZDX VN - Quản Lý Key</h1>
+            <p style="color: #ffff00; text-shadow: 0 0 10px #ffff00; font-family: 'Rowdies', cursive;">
+                Hệ thống quản lý key với 2 kiểu tạo: ZDX-Random và ZDX-Huy
+            </p>
+        </header>
+        
+        <div class="status-bar">
+            <div class="status-item">
+                <span id="connection-status">🟢 Đã kết nối</span>
+            </div>
+            <div class="status-item">
+                <span id="admin-status">👤 Quyền: Admin</span>
+            </div>
+            <div class="status-item">
+                <span id="key-count">📊 Đang tải...</span>
+            </div>
+        </div>
+        
+        <div class="tab-container">
+            <div class="tab active" data-tab="create-keys">Tạo Key</div>
+            <div class="tab" data-tab="manage-keys">Quản Lý Key</div>
+            <div class="tab" data-tab="activate-key">Kích Hoạt Key</div>
+            <div class="tab" data-tab="statistics">Thống Kê</div>
+            <div class="tab" data-tab="admin-management">Quản Lý Admin</div>
+        </div>
+        
+        <!-- Tạo Key Section -->
+        <div id="create-keys" class="content-section active">
+            <h2 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 15px; font-family: 'Orbitron', sans-serif;">Tạo Key Mới</h2>
+            <div class="card">
+                <div class="form-group">
+                    <label for="key-type">Loại Key:</label>
+                    <select id="key-type">
+                        <option value="single">Single</option>
+                        <option value="multi">Multi</option>
+                        <option value="unlimited">Unlimited</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="key-style">Kiểu Key:</label>
+                    <select id="key-style">
+                        <option value="random">ZDX-Random</option>
+                        <option value="huy">ZDX-Huy</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="key-amount">Số Lượng:</label>
+                    <input type="number" id="key-amount" min="1" max="100" value="1">
+                </div>
+                
+                <div class="form-group" id="days-container">
+                    <label for="key-days">Số Ngày (Không áp dụng cho Unlimited):</label>
+                    <input type="number" id="key-days" min="1" max="365" value="30">
+                </div>
+                
+                <button id="create-keys-btn" class="success">Tạo Key</button>
+            </div>
+            
+            <div id="create-result" class="result-area"></div>
+        </div>
+        
+        <!-- Quản Lý Key Section -->
+        <div id="manage-keys" class="content-section">
+            <h2 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 15px; font-family: 'Orbitron', sans-serif;">Quản Lý Key</h2>
+            
+            <div class="card">
+                <h3 style="color: #ff0066; text-shadow: 0 0 10px #ff0066; margin-bottom: 10px;">Xóa Key</h3>
+                <div class="form-group">
+                    <label for="keys-to-delete">Danh sách Key (mỗi key một dòng):</label>
+                    <textarea id="keys-to-delete" rows="5" placeholder="Nhập các key cần xóa, mỗi key một dòng"></textarea>
+                </div>
+                <button id="delete-keys-btn" class="danger">Xóa Key</button>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #ffa500; text-shadow: 0 0 10px #ffa500; margin-bottom: 10px;">Reset HWID</h3>
+                <div class="form-group">
+                    <label for="keys-to-reset">Danh sách Key (mỗi key một dòng):</label>
+                    <textarea id="keys-to-reset" rows="5" placeholder="Nhập các key cần reset HWID, mỗi key một dòng"></textarea>
+                </div>
+                <button id="reset-hwid-btn" class="warning">Reset HWID</button>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #00ff00; text-shadow: 0 0 10px #00ff00; margin-bottom: 10px;">Gia Hạn Key</h3>
+                <div class="form-group">
+                    <label for="extend-days">Số Ngày Gia Hạn:</label>
+                    <input type="number" id="extend-days" min="1" max="365" value="30">
+                </div>
+                <div class="form-group">
+                    <label for="keys-to-extend">Danh sách Key (mỗi key một dòng):</label>
+                    <textarea id="keys-to-extend" rows="5" placeholder="Nhập các key cần gia hạn, mỗi key một dòng"></textarea>
+                </div>
+                <button id="extend-keys-btn" class="success">Gia Hạn Key</button>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #ff0000; text-shadow: 0 0 10px #ff0000; margin-bottom: 10px;">Xóa Key Hết Hạn</h3>
+                <p style="color: #ffff00; margin-bottom: 10px;">Tự động xóa tất cả key đã hết hạn trong hệ thống.</p>
+                <button id="delete-expired-btn" class="danger">Xóa Key Hết Hạn</button>
+            </div>
+            
+            <div id="manage-result" class="result-area"></div>
+        </div>
+        
+        <!-- Kích Hoạt Key Section -->
+        <div id="activate-key" class="content-section">
+            <h2 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 15px; font-family: 'Orbitron', sans-serif;">Kích Hoạt Key</h2>
+            <div class="card">
+                <div class="form-group">
+                    <label for="activation-key">Key:</label>
+                    <input type="text" id="activation-key" placeholder="Nhập key cần kích hoạt">
+                </div>
+                
+                <div class="form-group">
+                    <label for="hwid">HWID:</label>
+                    <input type="text" id="hwid" placeholder="Nhập HWID">
+                </div>
+                
+                <button id="activate-key-btn" class="success">Kích Hoạt Key</button>
+            </div>
+            
+            <div id="activate-result" class="result-area"></div>
+        </div>
+        
+        <!-- Thống Kê Section -->
+        <div id="statistics" class="content-section">
+            <h2 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 15px; font-family: 'Orbitron', sans-serif;">Thống Kê Hệ Thống</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-title" style="color: #00ffcc;">Tổng Số Key</div>
+                    <div class="stat-value" id="total-keys">0</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-title" style="color: #00ffcc;">Single Keys</div>
+                    <div class="stat-value" id="single-keys">0</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-title" style="color: #00ffcc;">Multi Keys</div>
+                    <div class="stat-value" id="multi-keys">0</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-title" style="color: #00ffcc;">Unlimited Keys</div>
+                    <div class="stat-value" id="unlimited-keys">0</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-title" style="color: #00ffcc;">Key Hết Hạn</div>
+                    <div class="stat-value" id="expired-keys">0</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-title" style="color: #00ffcc;">Key Đã Kích Hoạt</div>
+                    <div class="stat-value" id="activated-keys">0</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 10px;">Danh Sách Key</h3>
+                <div class="key-list" id="key-list">
+                    <!-- Key list will be populated here -->
+                </div>
+                <div class="pagination">
+                    <button id="prev-page">⬅️ Trước</button>
+                    <span id="page-info" style="color: #ffff00; padding: 0 10px; display: flex; align-items: center;">Trang 1/1</span>
+                    <button id="next-page">Tiếp ➡️</button>
+                </div>
+            </div>
+            
+            <button id="refresh-stats-btn">Làm Mới Thống Kê</button>
+        </div>
+        
+        <!-- Quản Lý Admin Section -->
+        <div id="admin-management" class="content-section">
+            <h2 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 15px; font-family: 'Orbitron', sans-serif;">Quản Lý Admin</h2>
+            
+            <div class="card">
+                <h3 style="color: #00ff00; text-shadow: 0 0 10px #00ff00; margin-bottom: 10px;">Thêm Admin</h3>
+                <div class="form-group">
+                    <label for="new-admin-id">User ID:</label>
+                    <input type="text" id="new-admin-id" placeholder="Nhập ID user cần thêm làm admin">
+                </div>
+                <button id="add-admin-btn" class="success">Thêm Admin</button>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #ff0000; text-shadow: 0 0 10px #ff0000; margin-bottom: 10px;">Xóa Admin</h3>
+                <div class="form-group">
+                    <label for="remove-admin-id">User ID:</label>
+                    <input type="text" id="remove-admin-id" placeholder="Nhập ID user cần xóa khỏi admin">
+                </div>
+                <button id="remove-admin-btn" class="danger">Xóa Admin</button>
+            </div>
+            
+            <div class="card">
+                <h3 style="color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 10px;">Danh Sách Admin</h3>
+                <div id="admin-list">
+                    <!-- Admin list will be populated here -->
+                </div>
+                <button id="refresh-admin-btn">Làm Mới Danh Sách</button>
+            </div>
+            
+            <div id="admin-result" class="result-area"></div>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p style="color: #00ffcc;">Đang xử lý...</p>
+        </div>
+        
+        <footer>
+            <p>ZDX VN - Quản Lý Key | Hỗ trợ 2 kiểu tạo key: ZDX-Random và ZDX-Huy</p>
+        </footer>
+    </div>
+
+    <script>
+        // ===============================
+        // 🚀 CẤU HÌNH GITHUB
+        // ===============================
+        const GITHUB_TOKEN = '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'; // Nhập GitHub Token của bạn ở đây
+        const GITHUB_REPO = 'tranhuyk12haha/Bot-Discord';
+        const JSON_FILE_PATH = 'auth-data.json';
+        const ADMIN_IDS = [1395096403017072660, 1421668412274511963];
+        
+        // Biến toàn cục
+        let currentPage = 1;
+        let totalPages = 1;
+        let currentData = [];
+        
+        // Class KeyManager từ code gốc
+        class KeyManager {
+            constructor(githubToken, repoName) {
+                this.githubToken = githubToken;
+                this.repoName = repoName;
+            }
+            
+            generateKey(length = 16, prefix = "ZDX-") {
+                const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                let randomPart = '';
+                for (let i = 0; i < length; i++) {
+                    randomPart += chars.charAt(Math.floor(Math.random() * chars.length));
+                }
+                return `${prefix}${randomPart}`;
+            }
+            
+            generateCustomKey(pattern, length = 16) {
+                if (pattern.toLowerCase() === "huy") {
+                    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                    let randomPart = '';
+                    for (let i = 0; i < length; i++) {
+                        randomPart += chars.charAt(Math.floor(Math.random() * chars.length));
+                    }
+                    return `ZDX-${randomPart}`;
+                } else {
+                    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                    let randomPart = '';
+                    for (let i = 0; i < length; i++) {
+                        randomPart += chars.charAt(Math.floor(Math.random() * chars.length));
+                    }
+                    return `${pattern.toUpperCase()}-${randomPart}`;
+                }
+            }
+            
+            async getCurrentJson() {
+                try {
+                    const response = await fetch(`https://api.github.com/repos/${this.repoName}/contents/${JSON_FILE_PATH}`, {
+                        headers: {
+                            'Authorization': `token ${this.githubToken}`,
+                            'Accept': 'application/vnd.github.v3+json'
+                        }
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`GitHub API error: ${response.status}`);
+                    }
+                    
+                    const data = await response.json();
+                    const content = atob(data.content);
+                    return JSON.parse(content);
+                } catch (error) {
+                    console.error('Lỗi khi get JSON từ GitHub:', error);
+                    return [];
+                }
+            }
+            
+            async updateJson(newData) {
+                try {
+                    // First get the current file to get the SHA
+                    const currentResponse = await fetch(`https://api.github.com/repos/${this.repoName}/contents/${JSON_FILE_PATH}`, {
+                        headers: {
+                            'Authorization': `token ${this.githubToken}`,
+                            'Accept': 'application/vnd.github.v3+json'
+                        }
+                    });
+                    
+                    if (!currentResponse.ok) {
+                        throw new Error(`GitHub API error: ${currentResponse.status}`);
+                    }
+                    
+                    const currentData = await currentResponse.json();
+                    const sha = currentData.sha;
+                    
+                    // Update the file
+                    const content = btoa(JSON.stringify(newData, null, 2));
+                    const updateResponse = await fetch(`https://api.github.com/repos/${this.repoName}/contents/${JSON_FILE_PATH}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Authorization': `token ${this.githubToken}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            message: 'Update keys via web interface',
+                            content: content,
+                            sha: sha
+                        })
+                    });
+                    
+                    if (!updateResponse.ok) {
+                        throw new Error(`GitHub API error: ${updateResponse.status}`);
+                    }
+                    
+                    return true;
+                } catch (error) {
+                    console.error('Lỗi khi update JSON lên GitHub:', error);
+                    return false;
+                }
+            }
+            
+            calculateExpiryDate(days = 30) {
+                const expiryDate = new Date();
+                expiryDate.setDate(expiryDate.getDate() + days);
+                return expiryDate.toISOString();
+            }
+            
+            getExpiredKeys(keysData) {
+                const now = new Date();
+                return keysData.filter(key => {
+                    if (key.expires) {
+                        const expiryDate = new Date(key.expires);
+                        return expiryDate < now;
+                    }
+                    return false;
+                });
+            }
+            
+            safeGetHwid(keyData) {
+                return keyData.hwid || '';
+            }
+        }
+        
+        // Khởi tạo trang
+        document.addEventListener('DOMContentLoaded', function() {
+            // Kiểm tra GitHub Token
+            if (!GITHUB_TOKEN) {
+                showResult('create-result', '❌ Vui lòng cấu hình GitHub Token trong code!', false);
+                document.getElementById('connection-status').textContent = '🔴 Chưa kết nối';
+                document.getElementById('connection-status').style.color = '#ff0000';
+            }
+            
+            // Xử lý tab navigation
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Xóa active class từ tất cả tabs và sections
+                    tabs.forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.content-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    // Thêm active class cho tab và section được chọn
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Xử lý thay đổi loại key
+            document.getElementById('key-type').addEventListener('change', function() {
+                const daysContainer = document.getElementById('days-container');
+                if (this.value === 'unlimited') {
+                    daysContainer.style.display = 'none';
+                } else {
+                    daysContainer.style.display = 'block';
+                }
+            });
+            
+            // Xử lý tạo key
+            document.getElementById('create-keys-btn').addEventListener('click', createKeys);
+            
+            // Xử lý xóa key
+            document.getElementById('delete-keys-btn').addEventListener('click', deleteKeys);
+            
+            // Xử lý reset HWID
+            document.getElementById('reset-hwid-btn').addEventListener('click', resetHWID);
+            
+            // Xử lý gia hạn key
+            document.getElementById('extend-keys-btn').addEventListener('click', extendKeys);
+            
+            // Xử lý xóa key hết hạn
+            document.getElementById('delete-expired-btn').addEventListener('click', deleteExpiredKeys);
+            
+            // Xử lý kích hoạt key
+            document.getElementById('activate-key-btn').addEventListener('click', activateKey);
+            
+            // Xử lý thống kê
+            document.getElementById('refresh-stats-btn').addEventListener('click', loadStatistics);
+            
+            // Xử lý phân trang
+            document.getElementById('prev-page').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    loadKeyList();
+                }
+            });
+            
+            document.getElementById('next-page').addEventListener('click', function() {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    loadKeyList();
+                }
+            });
+            
+            // Xử lý quản lý admin
+            document.getElementById('add-admin-btn').addEventListener('click', addAdmin);
+            document.getElementById('remove-admin-btn').addEventListener('click', removeAdmin);
+            document.getElementById('refresh-admin-btn').addEventListener('click', loadAdminList);
+            
+            // Tải dữ liệu ban đầu
+            loadStatistics();
+            loadAdminList();
+            
+            // Khởi tạo particle background
+            initParticleBackground();
+        });
+        
+        // Hiển thị loading
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+        
+        // Ẩn loading
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+        
+        // Hiển thị kết quả
+        function showResult(elementId, message, isSuccess = true) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.className = 'result-area ' + (isSuccess ? 'success' : 'error');
+            
+            // Tự động ẩn sau 10 giây
+            setTimeout(() => {
+                element.style.display = 'none';
+            }, 10000);
+        }
+        
+        // Kiểm tra quyền admin
+        function isAdmin(userId) {
+            // Trong thực tế, bạn cần có cơ chế xác thực user
+            // Ở đây tôi giả sử user hiện tại là admin đầu tiên trong danh sách
+            return ADMIN_IDS.includes(parseInt(userId)) || userId === ADMIN_IDS[0].toString();
+        }
+        
+        // Tạo key
+        async function createKeys() {
+            if (!GITHUB_TOKEN) {
+                showResult('create-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            const keyType = document.getElementById('key-type').value;
+            const keyStyle = document.getElementById('key-style').value;
+            const amount = parseInt(document.getElementById('key-amount').value);
+            const days = keyType !== 'unlimited' ? parseInt(document.getElementById('key-days').value) : 0;
+            
+            if (amount < 1 || amount > 100) {
+                showResult('create-result', '❌ Số lượng key phải từ 1 đến 100!', false);
+                return;
+            }
+            
+            if (keyType !== 'unlimited' && (days < 1 || days > 365)) {
+                showResult('create-result', '❌ Số ngày phải từ 1 đến 365!', false);
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                const newKeys = [];
+                for (let i = 0; i < amount; i++) {
+                    const newKey = {
+                        "key": keyStyle === "random" ? manager.generateKey(prefix="ZDX-") : manager.generateCustomKey("huy"),
+                        "type": keyType,
+                    };
+                    
+                    if (keyType === "single") {
+                        newKey["hwid"] = "";
+                    }
+                    
+                    if (keyType !== "unlimited") {
+                        newKey["expires"] = manager.calculateExpiryDate(days);
+                    } else {
+                        newKey["unlimited"] = true;
+                    }
+                    
+                    newKeys.push(newKey);
+                    currentData.push(newKey);
+                }
+                
+                const success = await manager.updateJson(currentData);
+                
+                hideLoading();
+                
+                if (success) {
+                    let resultMessage = `✅ Đã tạo ${amount} key ${keyType} thành công!\n\n`;
+                    resultMessage += `Kiểu key: ${keyStyle === 'random' ? 'ZDX-Random' : 'ZDX-Huy'}\n`;
+                    if (keyType !== 'unlimited') {
+                        resultMessage += `Thời hạn: ${days} ngày\n`;
+                    }
+                    resultMessage += `\nKeys đã tạo:\n${newKeys.map(k => k.key).join('\n')}`;
+                    
+                    showResult('create-result', resultMessage, true);
+                    
+                    // Làm mới thống kê
+                    loadStatistics();
+                } else {
+                    showResult('create-result', '❌ Lỗi khi tạo keys!', false);
+                }
+            } catch (error) {
+                hideLoading();
+                showResult('create-result', '❌ Lỗi khi tạo key: ' + error.message, false);
+            }
+        }
+        
+        // Xóa key
+        async function deleteKeys() {
+            if (!GITHUB_TOKEN) {
+                showResult('manage-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            const keysText = document.getElementById('keys-to-delete').value.trim();
+            if (!keysText) {
+                showResult('manage-result', '❌ Vui lòng nhập ít nhất một key!', false);
+                return;
+            }
+            
+            const keys = keysText.split('\n').filter(key => key.trim() !== '');
+            
+            if (keys.length === 0) {
+                showResult('manage-result', '❌ Không có key hợp lệ!', false);
+                return;
+            }
+            
+            if (!confirm(`Bạn có chắc chắn muốn xóa ${keys.length} key này?`)) {
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                const newData = currentData.filter(keyObj => !keys.includes(keyObj.key));
+                const deletedCount = currentData.length - newData.length;
+                
+                const success = await manager.updateJson(newData);
+                
+                hideLoading();
+                
+                if (success) {
+                    showResult('manage-result', `✅ Đã xóa ${deletedCount} key thành công!\n\nKeys đã xóa:\n${keys.join('\n')}`, true);
+                    
+                    // Làm mới thống kê
+                    loadStatistics();
+                    
+                    // Xóa nội dung textarea
+                    document.getElementById('keys-to-delete').value = '';
+                } else {
+                    showResult('manage-result', '❌ Lỗi khi xóa keys!', false);
+                }
+            } catch (error) {
+                hideLoading();
+                showResult('manage-result', '❌ Lỗi khi xóa key: ' + error.message, false);
+            }
+        }
+        
+        // Reset HWID
+        async function resetHWID() {
+            if (!GITHUB_TOKEN) {
+                showResult('manage-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            const keysText = document.getElementById('keys-to-reset').value.trim();
+            if (!keysText) {
+                showResult('manage-result', '❌ Vui lòng nhập ít nhất một key!', false);
+                return;
+            }
+            
+            const keys = keysText.split('\n').filter(key => key.trim() !== '');
+            
+            if (keys.length === 0) {
+                showResult('manage-result', '❌ Không có key hợp lệ!', false);
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                let resetCount = 0;
+                currentData.forEach(key => {
+                    if (keys.includes(key.key) && key.type === 'single') {
+                        key.hwid = "";
+                        resetCount++;
+                    }
+                });
+                
+                const success = await manager.updateJson(currentData);
+                
+                hideLoading();
+                
+                if (success) {
+                    showResult('manage-result', `✅ Đã reset HWID cho ${resetCount} key thành công!\n\nKeys đã reset:\n${keys.join('\n')}`, true);
+                    
+                    // Xóa nội dung textarea
+                    document.getElementById('keys-to-reset').value = '';
+                } else {
+                    showResult('manage-result', '❌ Lỗi khi reset HWID!', false);
+                }
+            } catch (error) {
+                hideLoading();
+                showResult('manage-result', '❌ Lỗi khi reset HWID: ' + error.message, false);
+            }
+        }
+        
+        // Gia hạn key
+        async function extendKeys() {
+            if (!GITHUB_TOKEN) {
+                showResult('manage-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            const days = parseInt(document.getElementById('extend-days').value);
+            const keysText = document.getElementById('keys-to-extend').value.trim();
+            
+            if (days < 1 || days > 365) {
+                showResult('manage-result', '❌ Số ngày gia hạn phải từ 1 đến 365!', false);
+                return;
+            }
+            
+            if (!keysText) {
+                showResult('manage-result', '❌ Vui lòng nhập ít nhất một key!', false);
+                return;
+            }
+            
+            const keys = keysText.split('\n').filter(key => key.trim() !== '');
+            
+            if (keys.length === 0) {
+                showResult('manage-result', '❌ Không có key hợp lệ!', false);
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                let extendedCount = 0;
+                currentData.forEach(key => {
+                    if (keys.includes(key.key) && key.expires && !key.unlimited) {
+                        const currentExpiry = new Date(key.expires);
+                        currentExpiry.setDate(currentExpiry.getDate() + days);
+                        key.expires = currentExpiry.toISOString();
+                        extendedCount++;
+                    }
+                });
+                
+                const success = await manager.updateJson(currentData);
+                
+                hideLoading();
+                
+                if (success) {
+                    showResult('manage-result', `✅ Đã gia hạn thêm ${days} ngày cho ${extendedCount} key thành công!\n\nKeys đã gia hạn:\n${keys.join('\n')}`, true);
+                    
+                    // Xóa nội dung textarea
+                    document.getElementById('keys-to-extend').value = '';
+                } else {
+                    showResult('manage-result', '❌ Lỗi khi gia hạn key!', false);
+                }
+            } catch (error) {
+                hideLoading();
+                showResult('manage-result', '❌ Lỗi khi gia hạn key: ' + error.message, false);
+            }
+        }
+        
+        // Xóa key hết hạn
+        async function deleteExpiredKeys() {
+            if (!GITHUB_TOKEN) {
+                showResult('manage-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            if (!confirm('Bạn có chắc chắn muốn xóa tất cả key đã hết hạn?')) {
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                const expiredKeys = manager.getExpiredKeys(currentData);
+                const newData = currentData.filter(key => !expiredKeys.includes(key));
+                
+                const success = await manager.updateJson(newData);
+                
+                hideLoading();
+                
+                if (success) {
+                    showResult('manage-result', `✅ Đã xóa ${expiredKeys.length} key hết hạn thành công!`, true);
+                    
+                    // Làm mới thống kê
+                    loadStatistics();
+                } else {
+                    showResult('manage-result', '❌ Lỗi khi xóa key hết hạn!', false);
+                }
+            } catch (error) {
+                hideLoading();
+                showResult('manage-result', '❌ Lỗi khi xóa key hết hạn: ' + error.message, false);
+            }
+        }
+        
+        // Kích hoạt key
+        async function activateKey() {
+            if (!GITHUB_TOKEN) {
+                showResult('activate-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            const key = document.getElementById('activation-key').value.trim();
+            const hwid = document.getElementById('hwid').value.trim();
+            
+            if (!key) {
+                showResult('activate-result', '❌ Vui lòng nhập key!', false);
+                return;
+            }
+            
+            if (!hwid) {
+                showResult('activate-result', '❌ Vui lòng nhập HWID!', false);
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                let keyFound = false;
+                for (const k of currentData) {
+                    if (k.key === key) {
+                        if (k.type !== 'single') {
+                            showResult('activate-result', '❌ Key này không phải loại single!', false);
+                            hideLoading();
+                            return;
+                        }
+                        
+                        if (k.hwid && k.hwid !== "") {
+                            showResult('activate-result', '❌ Key này đã được kích hoạt trước đó!', false);
+                            hideLoading();
+                            return;
+                        }
+                        
+                        k.hwid = hwid;
+                        keyFound = true;
+                        break;
+                    }
+                }
+                
+                if (!keyFound) {
+                    showResult('activate-result', '❌ Key không tồn tại!', false);
+                    hideLoading();
+                    return;
+                }
+                
+                const success = await manager.updateJson(currentData);
+                
+                hideLoading();
+                
+                if (success) {
+                    showResult('activate-result', `✅ Kích hoạt key thành công!\n\nKey: ${key}\nHWID: ${hwid}`, true);
+                    
+                    // Xóa nội dung input
+                    document.getElementById('activation-key').value = '';
+                    document.getElementById('hwid').value = '';
+                } else {
+                    showResult('activate-result', '❌ Lỗi khi kích hoạt key!', false);
+                }
+            } catch (error) {
+                hideLoading();
+                showResult('activate-result', '❌ Lỗi khi kích hoạt key: ' + error.message, false);
+            }
+        }
+        
+        // Tải thống kê
+        async function loadStatistics() {
+            if (!GITHUB_TOKEN) {
+                showResult('create-result', '❌ GitHub Token chưa được cấu hình!', false);
+                return;
+            }
+            
+            showLoading();
+            
+            try {
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                currentData = await manager.getCurrentJson();
+                
+                hideLoading();
+                
+                const singleKeys = currentData.filter(k => k.type === 'single');
+                const multiKeys = currentData.filter(k => k.type === 'multi');
+                const unlimitedKeys = currentData.filter(k => k.unlimited);
+                const expiredKeys = manager.getExpiredKeys(currentData);
+                const activatedKeys = singleKeys.filter(k => k.hwid && k.hwid !== "");
+                
+                // Cập nhật thống kê
+                document.getElementById('total-keys').textContent = currentData.length;
+                document.getElementById('single-keys').textContent = singleKeys.length;
+                document.getElementById('multi-keys').textContent = multiKeys.length;
+                document.getElementById('unlimited-keys').textContent = unlimitedKeys.length;
+                document.getElementById('expired-keys').textContent = expiredKeys.length;
+                document.getElementById('activated-keys').textContent = activatedKeys.length;
+                document.getElementById('key-count').textContent = `📊 Tổng: ${currentData.length} keys`;
+                
+                // Tải danh sách key
+                loadKeyList();
+            } catch (error) {
+                hideLoading();
+                console.error('Lỗi khi tải thống kê:', error);
+                showResult('create-result', '❌ Lỗi khi tải dữ liệu từ GitHub: ' + error.message, false);
+            }
+        }
+        
+        // Tải danh sách key
+        function loadKeyList() {
+            const keyListElement = document.getElementById('key-list');
+            keyListElement.innerHTML = '';
+            
+            const itemsPerPage = 10;
+            totalPages = Math.ceil(currentData.length / itemsPerPage);
+            
+            // Cập nhật thông tin trang
+            document.getElementById('page-info').textContent = `Trang ${currentPage}/${totalPages}`;
+            
+            // Hiển thị danh sách key
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageData = currentData.slice(startIndex, endIndex);
+            
+            pageData.forEach((key, index) => {
+                const keyItem = document.createElement('div');
+                keyItem.className = 'key-item';
+                
+                const actualIndex = startIndex + index + 1;
+                let keyContent = `#${actualIndex} - ${key.key}`;
+                keyContent += ` | Loại: ${key.type}`;
+                
+                const manager = new KeyManager(GITHUB_TOKEN, GITHUB_REPO);
+                const hwid = manager.safeGetHwid(key);
+                keyContent += ` | Trạng thái: ${hwid ? '✅ Đã kích hoạt' : '⏳ Chưa kích hoạt'}`;
+                
+                if (key.unlimited) {
+                    keyContent += ' | ♾️ Vĩnh viễn';
+                } else if (key.expires) {
+                    const expiryDate = new Date(key.expires);
+                    const now = new Date();
+                    const isExpired = expiryDate < now;
+                    keyContent += isExpired ? ' | 🔴 Hết hạn' : ' | 🟢 Còn hạn';
+                } else {
+                    keyContent += ' | ❓ Không xác định';
+                }
+                
+                keyItem.textContent = keyContent;
+                keyListElement.appendChild(keyItem);
+            });
+        }
+        
+        // Thêm admin
+        async function addAdmin() {
+            const userId = document.getElementById('new-admin-id').value.trim();
+            
+            if (!userId) {
+                showResult('admin-result', '❌ Vui lòng nhập User ID!', false);
+                return;
+            }
+            
+            if (!/^\d+$/.test(userId)) {
+                showResult('admin-result', '❌ User ID phải là số!', false);
+                return;
+            }
+            
+            const userIdInt = parseInt(userId);
+            
+            if (ADMIN_IDS.includes(userIdInt)) {
+                showResult('admin-result', '❌ User đã có trong danh sách admin!', false);
+                return;
+            }
+            
+            ADMIN_IDS.push(userIdInt);
+            
+            showResult('admin-result', `✅ Đã thêm user ${userId} vào danh sách admin thành công!\n\nTổng số admin: ${ADMIN_IDS.length} users`, true);
+            
+            // Xóa nội dung input
+            document.getElementById('new-admin-id').value = '';
+            
+            // Làm mới danh sách admin
+            loadAdminList();
+        }
+        
+        // Xóa admin
+        async function removeAdmin() {
+            const userId = document.getElementById('remove-admin-id').value.trim();
+            
+            if (!userId) {
+                showResult('admin-result', '❌ Vui lòng nhập User ID!', false);
+                return;
+            }
+            
+            if (!/^\d+$/.test(userId)) {
+                showResult('admin-result', '❌ User ID phải là số!', false);
+                return;
+            }
+            
+            const userIdInt = parseInt(userId);
+            
+            if (!ADMIN_IDS.includes(userIdInt)) {
+                showResult('admin-result', '❌ User không có trong danh sách admin!', false);
+                return;
+            }
+            
+            if (ADMIN_IDS.length <= 1) {
+                showResult('admin-result', '❌ Không thể xóa admin cuối cùng!', false);
+                return;
+            }
+            
+            if (!confirm(`Bạn có chắc chắn muốn xóa user ${userId} khỏi danh sách admin?`)) {
+                return;
+            }
+            
+            const index = ADMIN_IDS.indexOf(userIdInt);
+            ADMIN_IDS.splice(index, 1);
+            
+            showResult('admin-result', `✅ Đã xóa user ${userId} khỏi danh sách admin thành công!\n\nTổng số admin: ${ADMIN_IDS.length} users`, true);
+            
+            // Xóa nội dung input
+            document.getElementById('remove-admin-id').value = '';
+            
+            // Làm mới danh sách admin
+            loadAdminList();
+        }
+        
+        // Tải danh sách admin
+        function loadAdminList() {
+            const adminListElement = document.getElementById('admin-list');
+            adminListElement.innerHTML = '';
+            
+            ADMIN_IDS.forEach(adminId => {
+                const adminItem = document.createElement('div');
+                adminItem.className = 'key-item';
+                adminItem.textContent = `ID: ${adminId}`;
+                adminListElement.appendChild(adminItem);
+            });
+        }
+        
+        // Particle Background Animation
+        function initParticleBackground() {
+            const canvas = document.getElementById('particle-bg');
+            const ctx = canvas.getContext('2d');
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            const particles = [];
+            const particleCount = 80;
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * 2;
+                    this.vy = (Math.random() - 0.5) * 2;
+                    this.size = Math.random() * 2 + 1;
+                    this.color = `rgba(0, 255, 204, ${Math.random() * 0.5 + 0.3})`;
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                for (let i = 0; i < particleCount; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function drawLines() {
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < 120) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(0, 255, 204, ${0.3 - distance / 400})`;
+                            ctx.lineWidth = 0.8;
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animate() {
+                ctx.fillStyle = 'rgba(10, 10, 42, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(particle => {
+                    particle.update();
+                    particle.draw();
+                });
+                drawLines();
+                requestAnimationFrame(animate);
+            }
+
+            initParticles();
+            animate();
+        }
+    </script>
+</body>
+</html>
