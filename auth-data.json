@@ -73,5 +73,10 @@
     "type": "single",
     "hwid": "",
     "expires": "2025-11-23T13:19:46.255Z"
+  },
+  {
+    "key": "ZDX-24OGMH8OKEHMBBTD",
+    "type": "multi",
+    "expires": "2025-11-23T13:20:10.574Z"
   }
 ]
