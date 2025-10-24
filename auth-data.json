@@ -1,16 +1,5 @@
 [
   {
-    "key": "SINGLE12345678901",
-    "hwid": "",
-    "type": "single",
-    "expires": "2024-12-31T23:59:59"
-  },
-  {
-    "key": "MULTI123456789012",
-    "type": "multi",
-    "expires": "2024-06-30T23:59:59"
-  },
-  {
     "key": "UNLIMITED12345678",
     "type": "unlimited",
     "unlimited": true
@@ -32,11 +21,6 @@
     "hwid": "166b4c9c1060a787586b119ae4e99fa0dd6d6e5760729ad0180fcb57fd4c195d",
     "type": "single",
     "expires": "2029-12-31T18:08:27.348811"
-  },
-  {
-    "key": "ZDX-QQZPD4L26BLD4RX6",
-    "type": "multi",
-    "expires": "2025-10-22T13:51:23.738993"
   },
   {
     "key": "ZDX-",
