@@ -82,5 +82,10 @@
     "key": "ZDX-FUER7AW67SJ1GRJS",
     "type": "unlimited",
     "unlimited": true
+  },
+  {
+    "key": "ZDX-",
+    "type": "unlimited",
+    "unlimited": true
   }
 ]
