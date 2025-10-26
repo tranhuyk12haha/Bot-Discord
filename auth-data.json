@@ -87,5 +87,11 @@
     "key": "ZDX-",
     "type": "unlimited",
     "unlimited": true
+  },
+  {
+    "key": "ZDX-QURYA9KFJYLGG6GV",
+    "type": "single",
+    "hwid": "",
+    "expires": "2025-11-25T09:38:06.873Z"
   }
 ]
