@@ -99,5 +99,10 @@
     "type": "single",
     "hwid": "",
     "expires": "2025-10-27T13:39:35.864Z"
+  },
+  {
+    "key": "Pentest-SX5M86EFP",
+    "type": "unlimited",
+    "unlimited": true
   }
 ]
