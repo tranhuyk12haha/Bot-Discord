@@ -26,36 +26,6 @@
     "key": "ZDX-",
     "type": "single",
     "hwid": "",
-    "expires": "2025-10-30T08:08:02.052Z"
-  },
-  {
-    "key": "ZDX-RVFW1QOMDGO83GG5",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-10-30T08:08:32.987Z"
-  },
-  {
-    "key": "ZDX-KSFPP8LAIQYSXMGK",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-10-30T08:08:47.830Z"
-  },
-  {
-    "key": "ZDX-ZCQDVA97XDDPFPOH",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-10-30T08:09:56.066Z"
-  },
-  {
-    "key": "ZDX-0DMBZTA6PZSF3JII",
-    "type": "single",
-    "hwid": "8e8fc3ffce4e901d5181bbc07dcbad5e4f7e1c72e17db3fcf000916ecbd1da6a",
-    "expires": "2025-10-25T13:01:07.648Z"
-  },
-  {
-    "key": "ZDX-",
-    "type": "single",
-    "hwid": "",
     "expires": "2025-11-23T13:19:46.255Z"
   },
   {
@@ -93,12 +63,6 @@
     "type": "single",
     "hwid": "",
     "expires": "2025-11-25T09:38:06.873Z"
-  },
-  {
-    "key": "nhatminh-KS8ESHAZ",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-10-27T13:39:35.864Z"
   },
   {
     "key": "Pentest-SX5M86EFP",
