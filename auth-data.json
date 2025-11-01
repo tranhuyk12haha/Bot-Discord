@@ -98,5 +98,11 @@
     "type": "single",
     "hwid": "HWID_WMI_FAILED",
     "expires": "2026-10-31T13:15:23.089Z"
+  },
+  {
+    "key": "ZDX-",
+    "type": "single",
+    "hwid": "",
+    "expires": "2026-11-01T00:26:19.166Z"
   }
 ]
