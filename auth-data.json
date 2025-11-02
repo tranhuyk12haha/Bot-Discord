@@ -146,5 +146,10 @@
     "type": "single",
     "hwid": "",
     "expires": "2026-11-02T04:14:29.543Z"
+  },
+  {
+    "key": "kenngu-LOV74W7Z11",
+    "type": "unlimited",
+    "unlimited": true
   }
 ]
