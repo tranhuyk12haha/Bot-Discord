@@ -151,5 +151,10 @@
     "key": "kenngu-LOV74W7Z11",
     "type": "unlimited",
     "unlimited": true
+  },
+  {
+    "key": "thanhhoaanrauma-V",
+    "type": "multi",
+    "expires": "2025-11-24T14:16:25.081Z"
   }
 ]
