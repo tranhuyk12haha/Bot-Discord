@@ -156,5 +156,17 @@
     "key": "thanhhoaanrauma-V",
     "type": "multi",
     "expires": "2025-11-24T14:16:25.081Z"
+  },
+  {
+    "key": "Ken_R7-7JHM92JTCK",
+    "type": "single",
+    "hwid": "",
+    "expires": "2026-11-08T05:01:26.535Z"
+  },
+  {
+    "key": "Ken_R7-5V40LN508Q",
+    "type": "single",
+    "hwid": "",
+    "expires": "2026-11-08T05:01:26.553Z"
   }
 ]
