@@ -10,13 +10,13 @@
     "active_devices": []
   },
   {
-    "key": "MULTI456", 
+    "key": "MULTI456",
     "type": "multi",
     "expires": "2024-12-31 23:59:59",
     "unlimited": false,
     "max_devices": 3,
     "device_info": "",
-    "status": "active", 
+    "status": "active",
     "active_devices": []
   },
   {
@@ -28,5 +28,13 @@
     "device_info": "",
     "status": "active",
     "active_devices": []
+  },
+  {
+    "key": "Admin-1G7KRVJD01R",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "last_login": null,
+    "expires": "2026-11-09T11:29:35.672Z"
   }
 ]
