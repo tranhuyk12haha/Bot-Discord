@@ -8,10 +8,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": "2024-12-31 23:59:59"
-,
+    "expires": "2024-12-31 23:59:59",
     "last_login": null
-  },  {
+  },
+  {
     "key": "MULTI456",
     "hwid": "",
     "type": "multi",
@@ -20,10 +20,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": "2024-12-31 23:59:59"
-,
+    "expires": "2024-12-31 23:59:59",
     "last_login": null
-  },  {
+  },
+  {
     "key": "UNLIMITED789",
     "hwid": "",
     "type": "unlimited",
@@ -32,10 +32,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": null
-,
+    "expires": null,
     "last_login": null
-  },  {
+  },
+  {
     "key": "Admin-1G7KRVJD01R",
     "hwid": "",
     "type": "single",
@@ -44,10 +44,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": "2026-11-09 18:29:35"
-,
+    "expires": "2026-11-09 18:29:35",
     "last_login": null
-  },  {
+  },
+  {
     "key": "Ken_R7-Z6VKPB3TKP",
     "hwid": "e06e63b8d124c31da4d927f1ecdca73f66c65436f8002c3e992035557a7a0a37",
     "type": "single",
@@ -56,10 +56,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": "2026-11-09 18:55:58"
-,
+    "expires": "2026-11-09 18:55:58",
     "last_login": null
-  },  {
+  },
+  {
     "key": "Ken_R7-BUXXXYTSA2",
     "hwid": "",
     "type": "single",
@@ -68,10 +68,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": "2026-11-09 18:55:58"
-,
+    "expires": "2026-11-09 18:55:58",
     "last_login": null
-  },  {
+  },
+  {
     "key": "Admin-2EV36W558SF",
     "hwid": "",
     "type": "single",
@@ -80,10 +80,10 @@
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "expires": "2026-11-09 20:24:03"
-,
+    "expires": "2026-11-09 20:24:03",
     "last_login": null
-  },  {
+  },
+  {
     "key": "Admin",
     "hwid": "",
     "type": "single",
@@ -92,7 +92,15 @@
     "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
     "status": "active",
     "active_devices": [],
-    "expires": "2026-09-05 20:26:01"
-,
+    "expires": "2026-09-05 20:26:01",
     "last_login": "2025-11-09 20:46:08"
-  }]
+  },
+  {
+    "key": "DATTHANHHOA36",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "last_login": null,
+    "expires": "2025-12-15T13:56:40.655Z"
+  }
+]
