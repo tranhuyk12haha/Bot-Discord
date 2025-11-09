@@ -1,172 +1,32 @@
 [
   {
-    "key": "UNLIMITED12345678",
-    "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "EKL6TJ7DVGPRXDA8",
-    "hwid": "",
+    "key": "SINGLE123",
     "type": "single",
-    "expires": "2025-11-19T18:03:23.143963"
+    "expires": "2024-12-31 23:59:59",
+    "unlimited": false,
+    "max_devices": 1,
+    "device_info": "",
+    "status": "active",
+    "active_devices": []
   },
   {
-    "key": "445KHAPQ6IJR0W2D",
-    "hwid": "",
-    "type": "single",
-    "expires": "2026-01-28T18:05:54.281838"
-  },
-  {
-    "key": "Admin",
-    "hwid": "166b4c9c1060a787586b119ae4e99fa0dd6d6e5760729ad0180fcb57fd4c195d",
-    "type": "single",
-    "expires": "2029-12-31T18:08:27.348811"
-  },
-  {
-    "key": "ZDX-",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-11-23T13:19:46.255Z"
-  },
-  {
-    "key": "ZDX-24OGMH8OKEHMBBTD",
+    "key": "MULTI456", 
     "type": "multi",
-    "expires": "2025-11-23T13:20:10.574Z"
+    "expires": "2024-12-31 23:59:59",
+    "unlimited": false,
+    "max_devices": 3,
+    "device_info": "",
+    "status": "active", 
+    "active_devices": []
   },
   {
-    "key": "ZDX-RE7HYSM11WKHEKFR",
-    "type": "multi",
-    "expires": "2025-11-23T13:22:20.146Z"
-  },
-  {
-    "key": "ZDX-30X9V86FVSJSEOB1",
+    "key": "UNLIMITED789",
     "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "ZDX-S0WVHO18RPNV522T",
-    "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "ZDX-FUER7AW67SJ1GRJS",
-    "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "ZDX-",
-    "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "ZDX-QURYA9KFJYLGG6GV",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-11-25T09:38:06.873Z"
-  },
-  {
-    "key": "Pentest-SX5M86EFP",
-    "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "Cowboy-6E57VBKKDV",
-    "type": "single",
-    "hwid": "f8f02a4232154a8a34748276dbf94cc669700dbc8d2360d9e02c23f31ae73c80",
-    "expires": "2026-10-31T12:45:17.322Z"
-  },
-  {
-    "key": "yeu ngoc tram-X5W",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-10-31T12:47:34.605Z"
-  },
-  {
-    "key": "ZDX-38Y4JNZI3JI7C8F8",
-    "type": "single",
-    "hwid": "",
-    "expires": "2025-11-30T12:55:34.975Z"
-  },
-  {
-    "key": "ZDX-HCKXW8MHE0M55VG1",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-10-31T13:15:18.054Z"
-  },
-  {
-    "key": "ZDX-B1PZ6U2PHN0P7WX2",
-    "type": "single",
-    "hwid": "HWID_WMI_FAILED",
-    "expires": "2026-10-31T13:15:23.089Z"
-  },
-  {
-    "key": "ZDX-",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-11-01T00:26:19.166Z"
-  },
-  {
-    "key": "ZDX-JH7IJWFZ0Q13H99O",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-11-01T00:26:32.302Z"
-  },
-  {
-    "key": "ZDX-MFR8JEABIGCYC7FB",
-    "type": "single",
-    "hwid": "f8f02a4232154a8a34748276dbf94cc669700dbc8d2360d9e02c23f31ae73c80",
-    "expires": "2026-11-01T00:26:45.613Z"
-  },
-  {
-    "key": "ZDX-O7ZFD0IDG8H2423E",
-    "type": "single",
-    "hwid": "791609a066bdf5d831d9a6cc1b4287a28d2cac8b3fea3b149c1b258f5e988884",
-    "expires": "2026-11-01T00:35:34.349Z"
-  },
-  {
-    "key": "ZDX-5272603OZ6O28IWK",
-    "type": "single",
-    "hwid": "c436fb4562eab114a62fe93a7ccea0d84f595b95f1ee4bbde4c46d046f0aeb90",
-    "expires": "2025-12-01T03:28:40.784Z"
-  },
-  {
-    "key": "ZDX-2M50K1U1HLZ07SNT",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-11-01T08:54:53.433Z"
-  },
-  {
-    "key": "ZDX-TCRSMKQ5Y5NKEASN",
-    "type": "single",
-    "hwid": "9ef0e261b2fa97576eb68c2cb434736cd334606dcdb5c0acdd7f2e73f734ccd5",
-    "expires": "2026-11-02T04:14:18.036Z"
-  },
-  {
-    "key": "ZDX-3JMIVEVLERDTODYY",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-11-02T04:14:29.543Z"
-  },
-  {
-    "key": "kenngu-LOV74W7Z11",
-    "type": "unlimited",
-    "unlimited": true
-  },
-  {
-    "key": "thanhhoaanrauma-V",
-    "type": "multi",
-    "expires": "2025-11-24T14:16:25.081Z"
-  },
-  {
-    "key": "Ken_R7-7JHM92JTCK",
-    "type": "single",
-    "hwid": "e9894a5793eb9d702cc360dc074c2d95d0dc25d169ef74d3101f75d726c2c3f2",
-    "expires": "2026-11-08T05:01:26.535Z"
-  },
-  {
-    "key": "Ken_R7-5V40LN508Q",
-    "type": "single",
-    "hwid": "",
-    "expires": "2026-11-08T05:01:26.553Z"
+    "expires": null,
+    "unlimited": true,
+    "max_devices": 1,
+    "device_info": "",
+    "status": "active",
+    "active_devices": []
   }
 ]
