@@ -84,22 +84,6 @@
     "last_login": "2025-11-10 20:09:54"
   },
   {
-    "key": "Tan",
-    "type": "single",
-    "device_info": "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5",
-    "status": "active",
-    "last_login": "2025-11-18T13:27:13.556Z",
-    "expires": "2025-11-19T13:25:56.735Z"
-  },
-  {
-    "key": "Tan",
-    "type": "single",
-    "device_info": "",
-    "status": "active",
-    "last_login": null,
-    "expires": "2025-11-19T13:31:07.995Z"
-  },
-  {
     "key": "ZDX-QSBUMALP61G15LEA",
     "type": "single",
     "device_info": "",
