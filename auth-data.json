@@ -86,9 +86,9 @@
   {
     "key": "Tan",
     "type": "single",
-    "device_info": "",
+    "device_info": "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5",
     "status": "active",
-    "last_login": null,
+    "last_login": "2025-11-18T13:27:13.556Z",
     "expires": "2025-11-19T13:25:56.735Z"
   }
 ]
