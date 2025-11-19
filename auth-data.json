@@ -130,5 +130,17 @@
     "expires": "2025-11-20 13:59:19",
     "unlimited": false,
     "last_login": null
+  },
+  {
+    "key": null,
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-11-20 14:00:33",
+    "unlimited": false,
+    "last_login": null
   }
 ]
