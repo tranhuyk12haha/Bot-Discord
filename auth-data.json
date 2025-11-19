@@ -84,24 +84,6 @@
     "last_login": "2025-11-10 20:09:54"
   },
   {
-    "key": "ZDX-QSBUMALP61G15LEA",
-    "type": "single",
-    "device_info": "",
-    "status": "active",
-    "last_login": null,
-    "expires": "2025-11-19T13:32:16.387Z"
-  },
-  {
-    "key": "Tan",
-    "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "last_login": null,
-    "max_devices": 3,
-    "active_devices": [],
-    "expires": "2025-11-19T13:32:53.096Z"
-  },
-  {
     "key": null,
     "hwid": "",
     "type": "multi",
