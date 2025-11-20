@@ -10,5 +10,17 @@
     "status": "active",
     "max_devices": 1,
     "active_devices": []
+  },
+  {
+    "key": null,
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 33,
+    "expires": "2025-11-21 14:30:49",
+    "unlimited": false,
+    "last_login": null
   }
 ]
