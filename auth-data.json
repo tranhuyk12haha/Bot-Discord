@@ -214,5 +214,17 @@
     "expires": "2025-11-21 09:51:44",
     "unlimited": false,
     "last_login": null
+  },
+  {
+    "key": "ZDX-NKSATRV0ATPXPUJR",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 3,
+    "expires": "2025-11-23 09:53:11",
+    "unlimited": false,
+    "last_login": null
   }
 ]
