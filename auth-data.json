@@ -8,7 +8,19 @@
     "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
     "status": "active",
     "active_devices": [],
-    "expires": "2025-11-25 10:03:24"
-,
+    "expires": "2025-11-25 10:03:24",
     "last_login": "2025-11-20 20:15:27"
-  }]
+  },
+  {
+    "key": "ZDX-A0B5QFZW2C5Z0JNX",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-12-26 13:17:44",
+    "unlimited": false,
+    "last_login": null
+  }
+]
