@@ -18,5 +18,17 @@
   {},
   {},
   {},
-  {}
+  {},
+  {
+    "key": "ZDX-8SXTZDARBFLB4R80",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-11-25 10:03:24",
+    "unlimited": false,
+    "last_login": null
+  }
 ]
