@@ -178,5 +178,17 @@
     "expires": "2025-11-30 09:28:19",
     "unlimited": false,
     "last_login": null
+  },
+  {
+    "key": "Huy",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2026-09-16 09:33:36",
+    "unlimited": false,
+    "last_login": null
   }
 ]
