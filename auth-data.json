@@ -1,17 +1,14 @@
 [
-  {},
-  {},
-  {},
   {
     "key": "Admin",
     "hwid": "",
     "type": "single",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 1,
     "expires": "2026-09-16 14:10:53",
     "unlimited": false,
-    "last_login": null
+    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
+    "last_login": "2025-11-20 21:28:22",
+    "status": "active",
+    "max_devices": 1,
+    "active_devices": []
   }
 ]
