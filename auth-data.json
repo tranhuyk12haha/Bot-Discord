@@ -1,28 +1,26 @@
 [
-  
- 
   {
     "key": "Admin1",
     "hwid": "",
     "type": "single",
+    "unlimited": true,
+    "max_devices": 1,
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "max_devices": 1,
-    "expires": null,
-    "unlimited": true,
-    "last_login": null
-  },
-  {
+    "expires": null
+,
+    "last_login": "2025-11-21 08:27:50"
+  },  {
     "key": "Admin",
     "hwid": "",
     "type": "single",
+    "unlimited": false,
+    "max_devices": 1,
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "max_devices": 1,
-    "expires": "2025-12-01 01:22:50",
-    "unlimited": false,
+    "expires": "2025-12-01 01:22:50"
+,
     "last_login": null
-  }
-]
+  }]
