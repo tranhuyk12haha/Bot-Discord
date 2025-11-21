@@ -4,11 +4,10 @@
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
+    "last_login": "2025-11-21 09:02:56",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": "2025-11-21 09:01:43"
-  }]
+    "max_devices": 1,
+    "active_devices": []
+  }
+]
