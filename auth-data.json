@@ -3,12 +3,11 @@
     "key": "Dat36",
     "hwid": "",
     "type": "single",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 1,
-    "expires": null,
     "unlimited": true,
-    "last_login": null
+    "device_info": "",
+    "last_login": "2025-11-21 22:11:49",
+    "status": "active",
+    "max_devices": 1,
+    "active_devices": []
   }
 ]
