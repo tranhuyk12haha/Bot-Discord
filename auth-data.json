@@ -1,4 +1,16 @@
 [
   {},
-  {}
+  {},
+  {
+    "key": "Admin",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-12-11 01:31:28",
+    "unlimited": false,
+    "last_login": null
+  }
 ]
