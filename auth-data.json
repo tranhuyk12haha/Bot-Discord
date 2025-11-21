@@ -12,5 +12,17 @@
     "active_devices": [
       "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f"
     ]
+  },
+  {
+    "key": "ZDX-YZIHTTC9VKE3ZX3L",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-11-22 15:34:35",
+    "unlimited": false,
+    "last_login": null
   }
 ]
