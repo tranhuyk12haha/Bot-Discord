@@ -1,35 +1,5 @@
 [
-  {
-    "key": "Huy",
-    "hwid": "",
-    "type": "single",
-    "expires": "2025-11-22 14:05:15",
-    "unlimited": false,
-    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-    "last_login": "2025-11-21 21:25:27",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
-  },
-  {
-    "key": "Huy",
-    "hwid": "",
-    "type": "single",
-    "expires": "2025-11-22 14:06:56",
-    "unlimited": false,
-    "device_info": "",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
-  },
-  {
-    "key": "Dat36",
-    "hwid": "",
-    "type": "single",
-    "unlimited": true,
-    "device_info": "",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
-  }
+  {},
+  {},
+  {}
 ]
