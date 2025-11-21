@@ -1,27 +1,4 @@
 [
-  {
-    "key": "Admin",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2025-11-22 10:42:01",
-    "unlimited": false,
-    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-    "last_login": "2025-11-21 18:52:04",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": [
-      "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"
-    ]
-  },
-  {
-    "key": "Admin",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2025-11-22 11:51:19",
-    "unlimited": false,
-    "device_info": "",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
-  }
+  {},
+  {}
 ]
