@@ -3,12 +3,14 @@
     "key": "Admin",
     "hwid": "",
     "type": "multi",
+    "expires": "2025-11-22 04:40:12",
     "unlimited": false,
-    "max_devices": 1,
     "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
+    "last_login": "2025-11-21 11:47:31",
     "status": "active",
-    "active_devices": ["eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"],
-    "expires": "2025-11-22 04:40:12"
-,
-    "last_login": "2025-11-21 11:45:26"
-  }]
+    "max_devices": 1,
+    "active_devices": [
+      "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"
+    ]
+  }
+]
