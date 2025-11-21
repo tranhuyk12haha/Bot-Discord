@@ -1,27 +1,38 @@
 [
-  {},
   {
-    "key": "Admin",
+    "key": "",
     "hwid": "",
-    "type": "multi",
+    "type": "",
+    "unlimited": false,
+    "max_devices": 1,
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "max_devices": 1,
-    "expires": "2025-11-22 10:42:01",
-    "unlimited": false,
+    "expires": null
+,
     "last_login": null
-  },
-  {
+  },  {
     "key": "Admin",
     "hwid": "",
     "type": "multi",
+    "unlimited": false,
+    "max_devices": 1,
+    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
+    "status": "active",
+    "active_devices": ["eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"],
+    "expires": "2025-11-22 10:42:01"
+,
+    "last_login": "2025-11-21 18:51:32"
+  },  {
+    "key": "Admin",
+    "hwid": "",
+    "type": "multi",
+    "unlimited": false,
+    "max_devices": 1,
     "device_info": "",
     "status": "active",
     "active_devices": [],
-    "max_devices": 1,
-    "expires": "2025-11-22 11:51:19",
-    "unlimited": false,
+    "expires": "2025-11-22 11:51:19"
+,
     "last_login": null
-  }
-]
+  }]
