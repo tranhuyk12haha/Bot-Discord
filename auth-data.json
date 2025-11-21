@@ -1,3 +1,15 @@
 [
-  {}
+  {},
+  {
+    "key": "Admin",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-11-22 07:09:25",
+    "unlimited": false,
+    "last_login": null
+  }
 ]
