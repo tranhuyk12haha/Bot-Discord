@@ -1,16 +1,3 @@
 [
-  {
-    "key": "Admin",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2025-11-22 06:41:37",
-    "unlimited": false,
-    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-    "last_login": "2025-11-21 13:46:35",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": [
-      "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"
-    ]
-  }
+  {}
 ]
