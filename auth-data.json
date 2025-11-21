@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "key": "Admin",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 3,
+    "expires": "2026-09-17 15:28:28",
+    "unlimited": false,
+    "last_login": null
+  }
+]
