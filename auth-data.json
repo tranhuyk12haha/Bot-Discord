@@ -11,5 +11,17 @@
     "expires": "2025-11-22 10:42:01",
     "unlimited": false,
     "last_login": null
+  },
+  {
+    "key": "Admin",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-11-22 11:51:19",
+    "unlimited": false,
+    "last_login": null
   }
 ]
