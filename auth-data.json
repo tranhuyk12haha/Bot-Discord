@@ -3,12 +3,14 @@
     "key": "Admin",
     "hwid": "",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 3,
     "expires": "2026-09-17 15:28:28",
     "unlimited": false,
-    "last_login": null
+    "device_info": "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
+    "last_login": "2025-11-21 22:32:52",
+    "status": "active",
+    "max_devices": 3,
+    "active_devices": [
+      "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f"
+    ]
   }
 ]
