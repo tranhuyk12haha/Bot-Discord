@@ -76,5 +76,17 @@
     "expires": "2025-12-02 12:50:29",
     "unlimited": false,
     "last_login": "2025-11-22 12:50:49"
+  },
+  {
+    "key": "Admin",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 3,
+    "expires": "2026-09-18 12:53:53",
+    "unlimited": false,
+    "last_login": null
   }
 ]
