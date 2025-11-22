@@ -1,26 +1,3 @@
 [
-  {
-    "key": "MULTI123",
-    "type": "multi",
-    "unlimited": false,
-    "max_devices": 3,
-    "active_ips": ["192.168.1.100", "192.168.1.101"],
-    "expires": "2026-12-31 23:59:59"
-  },
-  {
-    "key": "UNLIMITED456",
-    "type": "multi", 
-    "unlimited": true,
-    "max_devices": 999,
-    "active_ips": [],
-    "expires": null
-  },
-  {
-    "key": "TESTKEY789",
-    "type": "multi",
-    "unlimited": false,
-    "max_devices": 2,
-    "active_ips": ["192.168.1.50"],
-    "expires": "2026-06-30 23:59:59"
-  }
+  
 ]
