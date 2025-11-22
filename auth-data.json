@@ -50,7 +50,10 @@
     "device_info": "",
     "status": "active",
     "max_devices": 3,
-    "active_devices": []
+    "active_devices": [
+      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9"
+    ],
+    "last_login": "2025-11-22 12:48:21"
   },
   {
     "key": "kendzontop",
