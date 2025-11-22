@@ -1,92 +1,26 @@
 [
   {
-    "key": "Admin",
-    "hwid": "",
+    "key": "MULTI123",
     "type": "multi",
-    "expires": "2026-09-17 15:28:28",
     "unlimited": false,
-    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-    "last_login": "2025-11-22 19:49:36",
-    "status": "active",
     "max_devices": 3,
-    "active_devices": [
-      "b2bcc7a8b37850e2a8db56f68801f5fb2e7b95811ec27eb1f407058ddea2ea8f",
-      "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
-      "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"
-    ]
+    "active_ips": ["192.168.1.100", "192.168.1.101"],
+    "expires": "2026-12-31 23:59:59"
   },
   {
-    "key": "ken",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2026-06-10 01:10:04",
-    "unlimited": false,
-    "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-    "last_login": "2025-11-22 19:21:30",
-    "status": "active",
-    "max_devices": 5,
-    "active_devices": [
-      "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862",
-      "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15"
-    ]
-  },
-  {
-    "key": "kendz",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2026-03-02 12:08:28",
-    "unlimited": false,
-    "device_info": "",
-    "status": "active",
-    "max_devices": 2,
-    "active_devices": []
-  },
-  {
-    "key": "Kenoc",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2025-12-02 12:42:54",
-    "unlimited": false,
-    "device_info": "",
-    "last_login": "2025-11-22 12:48:21",
-    "status": "active",
-    "max_devices": 3,
-    "active_devices": [
-      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9"
-    ]
-  },
-  {
-    "key": "kendzontop",
-    "hwid": "",
-    "type": "single",
+    "key": "UNLIMITED456",
+    "type": "multi", 
     "unlimited": true,
-    "device_info": "",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
+    "max_devices": 999,
+    "active_ips": [],
+    "expires": null
   },
   {
-    "key": "kendubai",
-    "hwid": "",
-    "type": "single",
-    "device_info": "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 1,
-    "expires": "2025-12-02 12:50:29",
-    "unlimited": false,
-    "last_login": "2025-11-22 12:50:49"
-  },
-  {
-    "key": "Admin",
-    "hwid": "",
+    "key": "TESTKEY789",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 3,
-    "expires": "2026-09-18 12:53:53",
     "unlimited": false,
-    "last_login": null
+    "max_devices": 2,
+    "active_ips": ["192.168.1.50"],
+    "expires": "2026-06-30 23:59:59"
   }
 ]
