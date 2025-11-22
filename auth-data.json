@@ -6,7 +6,7 @@
     "expires": "2026-09-17 15:28:28",
     "unlimited": false,
     "device_info": "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-    "last_login": "2025-11-22 19:43:42",
+    "last_login": "2025-11-22 19:49:36",
     "status": "active",
     "max_devices": 3,
     "active_devices": [
@@ -48,12 +48,12 @@
     "expires": "2025-12-02 12:42:54",
     "unlimited": false,
     "device_info": "",
+    "last_login": "2025-11-22 12:48:21",
     "status": "active",
     "max_devices": 3,
     "active_devices": [
       "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9"
-    ],
-    "last_login": "2025-11-22 12:48:21"
+    ]
   },
   {
     "key": "kendzontop",
