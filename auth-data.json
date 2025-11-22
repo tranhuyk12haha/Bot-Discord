@@ -69,12 +69,12 @@
     "key": "kendubai",
     "hwid": "",
     "type": "single",
-    "device_info": "",
+    "device_info": "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
     "status": "active",
     "active_devices": [],
     "max_devices": 1,
     "expires": "2025-12-02 12:50:29",
     "unlimited": false,
-    "last_login": null
+    "last_login": "2025-11-22 12:50:49"
   }
 ]
