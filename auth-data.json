@@ -64,5 +64,17 @@
     "status": "active",
     "max_devices": 1,
     "active_devices": []
+  },
+  {
+    "key": "kendubai",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-12-02 12:50:29",
+    "unlimited": false,
+    "last_login": null
   }
 ]
