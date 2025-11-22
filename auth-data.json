@@ -28,5 +28,17 @@
     "active_devices": [
       "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862"
     ]
+  },
+  {
+    "key": "kendz",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 2,
+    "expires": "2026-03-02 12:08:28",
+    "unlimited": false,
+    "last_login": null
   }
 ]
