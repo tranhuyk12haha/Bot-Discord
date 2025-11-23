@@ -44,5 +44,17 @@
       "f2ec124bf4fc53f9aeffaa89236a24953216174d6210fe72b3c3a313d977ed40",
       "ae496449bca543d8b62e4383fdd5e442b54759727fe36aaccac02f83f247c52b"
     ]
+  },
+  {
+    "key": "4ngay",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": "2025-11-27 11:01:36",
+    "unlimited": false,
+    "last_login": null
   }
 ]
