@@ -1,16 +1,5 @@
 [
   {
-    "key": "Huyd",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2025-11-25 17:01:04",
-    "unlimited": false,
-    "device_info": "",
-    "status": "active",
-    "max_devices": 100,
-    "active_devices": []
-  },
-  {
     "key": "Admin",
     "hwid": "",
     "type": "multi",
