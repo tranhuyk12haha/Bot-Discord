@@ -34,12 +34,14 @@
     "key": "dark",
     "hwid": "",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 3,
     "expires": "2026-09-19 06:22:43",
     "unlimited": false,
-    "last_login": null
+    "device_info": "f2ec124bf4fc53f9aeffaa89236a24953216174d6210fe72b3c3a313d977ed40",
+    "last_login": "2025-11-23 13:30:01",
+    "status": "active",
+    "max_devices": 3,
+    "active_devices": [
+      "f2ec124bf4fc53f9aeffaa89236a24953216174d6210fe72b3c3a313d977ed40"
+    ]
   }
 ]
