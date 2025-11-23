@@ -6,7 +6,7 @@
     "expires": "2025-11-25 18:57:51",
     "unlimited": false,
     "device_info": "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
-    "last_login": "2025-11-23 09:47:51",
+    "last_login": "2025-11-23 11:35:49",
     "status": "active",
     "max_devices": 100,
     "active_devices": [
@@ -18,26 +18,25 @@
     "key": "khiem",
     "hwid": "",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [
-      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9"
-    ],
-    "max_devices": 3,
     "expires": "2026-09-19 04:14:36",
     "unlimited": false,
-    "last_login": "2025-11-23 04:15:59"
+    "device_info": "",
+    "last_login": "2025-11-23 04:15:59",
+    "status": "active",
+    "max_devices": 3,
+    "active_devices": [
+      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9"
+    ]
   },
   {
     "key": "ZDX-UBALZ490F87TX5ED",
     "hwid": "",
     "type": "single",
-    "device_info": "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 1,
-    "expires": null,
     "unlimited": true,
-    "last_login": "2025-11-23 04:22:58"
+    "device_info": "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
+    "last_login": "2025-11-23 04:22:58",
+    "status": "active",
+    "max_devices": 1,
+    "active_devices": []
   }
 ]
