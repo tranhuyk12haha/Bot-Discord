@@ -32,12 +32,12 @@
     "key": "ZDX-UBALZ490F87TX5ED",
     "hwid": "",
     "type": "single",
-    "device_info": "",
+    "device_info": "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
     "status": "active",
     "active_devices": [],
     "max_devices": 1,
     "expires": null,
     "unlimited": true,
-    "last_login": null
+    "last_login": "2025-11-23 04:22:58"
   }
 ]
