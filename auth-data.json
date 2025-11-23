@@ -29,5 +29,17 @@
       "00be1396d65e395a75284ef22550f97e6cf7cad21823e519f2cfb20bf68488a9",
       "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862"
     ]
+  },
+  {
+    "key": "dark",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 3,
+    "expires": "2026-09-19 06:22:43",
+    "unlimited": false,
+    "last_login": null
   }
 ]
