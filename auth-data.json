@@ -51,7 +51,9 @@
     "type": "single",
     "device_info": "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5",
     "status": "active",
-    "active_devices": [],
+    "active_devices": [
+      "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5"
+    ],
     "max_devices": 1,
     "expires": "2025-11-27 11:01:36",
     "unlimited": false,
