@@ -29,16 +29,5 @@
       "00be1396d65e395a75284ef22550f97e6cf7cad21823e519f2cfb20bf68488a9",
       "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862"
     ]
-  },
-  {
-    "key": "ZDX-UBALZ490F87TX5ED",
-    "hwid": "",
-    "type": "single",
-    "unlimited": true,
-    "device_info": "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
-    "last_login": "2025-11-23 04:22:58",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
   }
 ]
