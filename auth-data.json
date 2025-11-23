@@ -31,10 +31,12 @@
     "type": "multi",
     "device_info": "",
     "status": "active",
-    "active_devices": [],
+    "active_devices": [
+      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9"
+    ],
     "max_devices": 3,
     "expires": "2026-09-19 04:14:36",
     "unlimited": false,
-    "last_login": null
+    "last_login": "2025-11-23 04:15:59"
   }
 ]
