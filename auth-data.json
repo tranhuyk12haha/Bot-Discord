@@ -58,5 +58,17 @@
     "active_devices": [
       "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5"
     ]
+  },
+  {
+    "key": "mtu",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 2,
+    "expires": "2026-06-12 04:44:38",
+    "unlimited": false,
+    "last_login": null
   }
 ]
