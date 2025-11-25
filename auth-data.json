@@ -73,5 +73,17 @@
       "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862",
       "5c00ea892349543eaa7411a1659e5d2a0825d11d11eb64fe483d5534ed4a559a"
     ]
+  },
+  {
+    "key": "ken",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 3,
+    "expires": "2026-06-13 04:21:18",
+    "unlimited": false,
+    "last_login": null
   }
 ]
