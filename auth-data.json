@@ -81,9 +81,12 @@
     "type": "multi",
     "expires": "2026-06-13 04:21:18",
     "unlimited": false,
-    "device_info": "",
+    "device_info": "3ffb60246d3f86f0fb994e0be8cdfae9f0d7f4b62e9b8ed4b802db045b55fbda",
+    "last_login": "2025-11-25 15:38:38",
     "status": "active",
     "max_devices": 3,
-    "active_devices": []
+    "active_devices": [
+      "3ffb60246d3f86f0fb994e0be8cdfae9f0d7f4b62e9b8ed4b802db045b55fbda"
+    ]
   }
 ]
