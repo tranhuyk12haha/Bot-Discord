@@ -36,13 +36,14 @@
     "type": "multi",
     "expires": "2026-09-19 06:22:43",
     "unlimited": false,
-    "device_info": "ae496449bca543d8b62e4383fdd5e442b54759727fe36aaccac02f83f247c52b",
-    "last_login": "2025-11-23 13:20:05",
+    "device_info": "8cb723c99d11782310c5f5d19627d59d3483c24812b606e4b34e8c0e834b86d8",
+    "last_login": "2025-11-25 14:45:33",
     "status": "active",
     "max_devices": 3,
     "active_devices": [
       "f2ec124bf4fc53f9aeffaa89236a24953216174d6210fe72b3c3a313d977ed40",
-      "ae496449bca543d8b62e4383fdd5e442b54759727fe36aaccac02f83f247c52b"
+      "ae496449bca543d8b62e4383fdd5e442b54759727fe36aaccac02f83f247c52b",
+      "8cb723c99d11782310c5f5d19627d59d3483c24812b606e4b34e8c0e834b86d8"
     ]
   },
   {
@@ -78,12 +79,11 @@
     "key": "ken",
     "hwid": "",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 3,
     "expires": "2026-06-13 04:21:18",
     "unlimited": false,
-    "last_login": null
+    "device_info": "",
+    "status": "active",
+    "max_devices": 3,
+    "active_devices": []
   }
 ]
