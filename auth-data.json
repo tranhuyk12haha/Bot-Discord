@@ -110,12 +110,14 @@
     "key": "khoa",
     "hwid": "",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 2,
     "expires": "2026-06-15 11:39:52",
     "unlimited": false,
-    "last_login": null
+    "device_info": "a90807d7975b80827896fbd61e2f563f3bf568fd53e667ee1304dd02a2a8831d",
+    "last_login": "2025-11-27 18:40:48",
+    "status": "active",
+    "max_devices": 2,
+    "active_devices": [
+      "a90807d7975b80827896fbd61e2f563f3bf568fd53e667ee1304dd02a2a8831d"
+    ]
   }
 ]
