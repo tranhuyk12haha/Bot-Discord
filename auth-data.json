@@ -112,13 +112,13 @@
     "type": "multi",
     "expires": "2026-06-15 11:39:52",
     "unlimited": false,
-    "device_info": "f01b23865c743a10e5032f448433a6c2aab2c35b400f11e378700bb2099c67d1",
-    "last_login": "2025-11-27 21:02:42",
+    "device_info": "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d",
+    "last_login": "2025-11-27 21:07:00",
     "status": "active",
     "max_devices": 2,
     "active_devices": [
       "a90807d7975b80827896fbd61e2f563f3bf568fd53e667ee1304dd02a2a8831d",
-      "f01b23865c743a10e5032f448433a6c2aab2c35b400f11e378700bb2099c67d1"
+      "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d"
     ]
   }
 ]
