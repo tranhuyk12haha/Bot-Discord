@@ -105,5 +105,17 @@
       "acadbe5bedb2b9100338229b08c45923e37b5e5a2ea0db59f56b5e16872b5614",
       "0c3bbd161c8bad2915994e534408c53bb465f475233172c67f92ac4a0a140f3a"
     ]
+  },
+  {
+    "key": "khoa",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 2,
+    "expires": "2026-06-15 11:39:52",
+    "unlimited": false,
+    "last_login": null
   }
 ]
