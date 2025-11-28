@@ -122,5 +122,17 @@
       "a90807d7975b80827896fbd61e2f563f3bf568fd53e667ee1304dd02a2a8831d",
       "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d"
     ]
+  },
+  {
+    "key": "nguyen",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 2,
+    "expires": "2026-06-16 08:33:19",
+    "unlimited": false,
+    "last_login": null
   }
 ]
