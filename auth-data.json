@@ -5,13 +5,14 @@
     "type": "multi",
     "expires": "2026-03-05 18:57:51",
     "unlimited": false,
-    "device_info": "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
-    "last_login": "2025-11-26 23:05:04",
+    "device_info": "3c2e70f113b7da3f78648dc6eadb07d7daf43381f37bf10558a8e5ceff19aaf3",
+    "last_login": "2025-11-28 08:38:24",
     "status": "active",
     "max_devices": 100,
     "active_devices": [
       "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
-      "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f"
+      "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
+      "3c2e70f113b7da3f78648dc6eadb07d7daf43381f37bf10558a8e5ceff19aaf3"
     ]
   },
   {
