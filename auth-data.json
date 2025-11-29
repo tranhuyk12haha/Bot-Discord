@@ -143,12 +143,14 @@
     "key": "ngu",
     "hwid": "",
     "type": "multi",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 2,
     "expires": "2026-06-17 13:49:47",
     "unlimited": false,
-    "last_login": null
+    "device_info": "3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e",
+    "last_login": "2025-11-29 20:50:25",
+    "status": "active",
+    "max_devices": 2,
+    "active_devices": [
+      "3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e"
+    ]
   }
 ]
