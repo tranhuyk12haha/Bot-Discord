@@ -138,5 +138,17 @@
       "07691420bb48e1504f0dbfd80f10e8cf5b4f335bd01586b2774bdb3524e19ca0",
       "d33d7afee4f15c59e1179a2a9004dd6772f0e861ea54c8731c53851cf40543ce"
     ]
+  },
+  {
+    "key": "ngu",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 2,
+    "expires": "2026-06-17 13:49:47",
+    "unlimited": false,
+    "last_login": null
   }
 ]
