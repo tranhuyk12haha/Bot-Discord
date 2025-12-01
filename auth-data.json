@@ -3,120 +3,154 @@
     "key": "Admin",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-03-05 18:57:51",
     "unlimited": false,
-    "max_devices": 100,
     "device_info": "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6",
+    "last_login": "2025-12-02 01:49:44",
     "status": "active",
-    "active_devices": ["eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15", "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f", "3c2e70f113b7da3f78648dc6eadb07d7daf43381f37bf10558a8e5ceff19aaf3", "770abed0e9b2c32318995470f1c533d4c41cd9ed46309a32f1a18384d49aef5f", "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6"],
-    "expires": "2026-03-05 18:57:51"
-,
-    "last_login": "2025-12-02 01:43:58"
-  },  {
+    "max_devices": 100,
+    "active_devices": [
+      "eb5ac92a876d70370d7fd1c8f984fc97eadc2e10b90bc1702600171bf41b3b15",
+      "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
+      "3c2e70f113b7da3f78648dc6eadb07d7daf43381f37bf10558a8e5ceff19aaf3",
+      "770abed0e9b2c32318995470f1c533d4c41cd9ed46309a32f1a18384d49aef5f",
+      "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6"
+    ]
+  },
+  {
     "key": "khiem",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-09-19 04:14:36",
     "unlimited": false,
-    "max_devices": 3,
     "device_info": "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862",
+    "last_login": "2025-11-27 21:37:35",
     "status": "active",
-    "active_devices": ["f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9", "00be1396d65e395a75284ef22550f97e6cf7cad21823e519f2cfb20bf68488a9", "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862"],
-    "expires": "2026-09-19 04:14:36"
-,
-    "last_login": "2025-11-27 21:37:35"
-  },  {
+    "max_devices": 3,
+    "active_devices": [
+      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
+      "00be1396d65e395a75284ef22550f97e6cf7cad21823e519f2cfb20bf68488a9",
+      "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862"
+    ]
+  },
+  {
     "key": "dark",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-09-19 06:22:43",
     "unlimited": false,
-    "max_devices": 3,
     "device_info": "8cb723c99d11782310c5f5d19627d59d3483c24812b606e4b34e8c0e834b86d8",
+    "last_login": "2025-11-26 12:30:25",
     "status": "active",
-    "active_devices": ["f2ec124bf4fc53f9aeffaa89236a24953216174d6210fe72b3c3a313d977ed40", "ae496449bca543d8b62e4383fdd5e442b54759727fe36aaccac02f83f247c52b", "8cb723c99d11782310c5f5d19627d59d3483c24812b606e4b34e8c0e834b86d8"],
-    "expires": "2026-09-19 06:22:43"
-,
-    "last_login": "2025-11-26 12:30:25"
-  },  {
+    "max_devices": 3,
+    "active_devices": [
+      "f2ec124bf4fc53f9aeffaa89236a24953216174d6210fe72b3c3a313d977ed40",
+      "ae496449bca543d8b62e4383fdd5e442b54759727fe36aaccac02f83f247c52b",
+      "8cb723c99d11782310c5f5d19627d59d3483c24812b606e4b34e8c0e834b86d8"
+    ]
+  },
+  {
     "key": "4ngay",
     "hwid": "",
     "type": "single",
+    "expires": "2025-11-27 11:01:36",
     "unlimited": false,
-    "max_devices": 1,
     "device_info": "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5",
+    "last_login": "2025-11-23 11:02:25",
     "status": "active",
-    "active_devices": ["678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5"],
-    "expires": "2025-11-27 11:01:36"
-,
-    "last_login": "2025-11-23 11:02:25"
-  },  {
+    "max_devices": 1,
+    "active_devices": [
+      "678bc50adcfd6a3adfd44157eaa5f6f12e354667327967f7f4f699add62ffac5"
+    ]
+  },
+  {
     "key": "mtu",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-06-12 04:44:38",
     "unlimited": false,
-    "max_devices": 2,
     "device_info": "5c00ea892349543eaa7411a1659e5d2a0825d11d11eb64fe483d5534ed4a559a",
+    "last_login": "2025-11-26 05:25:41",
     "status": "active",
-    "active_devices": ["1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862", "5c00ea892349543eaa7411a1659e5d2a0825d11d11eb64fe483d5534ed4a559a"],
-    "expires": "2026-06-12 04:44:38"
-,
-    "last_login": "2025-11-26 05:25:41"
-  },  {
+    "max_devices": 2,
+    "active_devices": [
+      "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862",
+      "5c00ea892349543eaa7411a1659e5d2a0825d11d11eb64fe483d5534ed4a559a"
+    ]
+  },
+  {
     "key": "ken",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-06-13 04:21:18",
     "unlimited": false,
-    "max_devices": 3,
     "device_info": "5bb8039dfe2860d6a6ad4452051d6c12942e218318e457b46d7091bc83e345c9",
+    "last_login": "2025-11-26 18:45:55",
     "status": "active",
-    "active_devices": ["3ffb60246d3f86f0fb994e0be8cdfae9f0d7f4b62e9b8ed4b802db045b55fbda", "7c465a0e44807f008d20445c4908949e8307d8fe005641c32473c2c568d35402", "5bb8039dfe2860d6a6ad4452051d6c12942e218318e457b46d7091bc83e345c9"],
-    "expires": "2026-06-13 04:21:18"
-,
-    "last_login": "2025-11-26 18:45:55"
-  },  {
+    "max_devices": 3,
+    "active_devices": [
+      "3ffb60246d3f86f0fb994e0be8cdfae9f0d7f4b62e9b8ed4b802db045b55fbda",
+      "7c465a0e44807f008d20445c4908949e8307d8fe005641c32473c2c568d35402",
+      "5bb8039dfe2860d6a6ad4452051d6c12942e218318e457b46d7091bc83e345c9"
+    ]
+  },
+  {
     "key": "ctv",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-09-23 05:25:27",
     "unlimited": false,
-    "max_devices": 2,
     "device_info": "0c3bbd161c8bad2915994e534408c53bb465f475233172c67f92ac4a0a140f3a",
+    "last_login": "2025-11-27 05:11:13",
     "status": "active",
-    "active_devices": ["acadbe5bedb2b9100338229b08c45923e37b5e5a2ea0db59f56b5e16872b5614", "0c3bbd161c8bad2915994e534408c53bb465f475233172c67f92ac4a0a140f3a"],
-    "expires": "2026-09-23 05:25:27"
-,
-    "last_login": "2025-11-27 05:11:13"
-  },  {
+    "max_devices": 2,
+    "active_devices": [
+      "acadbe5bedb2b9100338229b08c45923e37b5e5a2ea0db59f56b5e16872b5614",
+      "0c3bbd161c8bad2915994e534408c53bb465f475233172c67f92ac4a0a140f3a"
+    ]
+  },
+  {
     "key": "khoa",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-06-15 11:39:52",
     "unlimited": false,
-    "max_devices": 2,
     "device_info": "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d",
+    "last_login": "2025-12-02 00:14:04",
     "status": "active",
-    "active_devices": ["a90807d7975b80827896fbd61e2f563f3bf568fd53e667ee1304dd02a2a8831d", "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d"],
-    "expires": "2026-06-15 11:39:52"
-,
-    "last_login": "2025-12-02 00:14:04"
-  },  {
+    "max_devices": 2,
+    "active_devices": [
+      "a90807d7975b80827896fbd61e2f563f3bf568fd53e667ee1304dd02a2a8831d",
+      "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d"
+    ]
+  },
+  {
     "key": "nguyen",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-06-16 08:33:19",
     "unlimited": false,
-    "max_devices": 2,
     "device_info": "d33d7afee4f15c59e1179a2a9004dd6772f0e861ea54c8731c53851cf40543ce",
+    "last_login": "2025-12-02 00:56:36",
     "status": "active",
-    "active_devices": ["07691420bb48e1504f0dbfd80f10e8cf5b4f335bd01586b2774bdb3524e19ca0", "d33d7afee4f15c59e1179a2a9004dd6772f0e861ea54c8731c53851cf40543ce"],
-    "expires": "2026-06-16 08:33:19"
-,
-    "last_login": "2025-12-02 00:56:36"
-  },  {
+    "max_devices": 2,
+    "active_devices": [
+      "07691420bb48e1504f0dbfd80f10e8cf5b4f335bd01586b2774bdb3524e19ca0",
+      "d33d7afee4f15c59e1179a2a9004dd6772f0e861ea54c8731c53851cf40543ce"
+    ]
+  },
+  {
     "key": "ngu",
     "hwid": "",
     "type": "multi",
+    "expires": "2026-06-17 13:49:47",
     "unlimited": false,
-    "max_devices": 2,
     "device_info": "3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e",
+    "last_login": "2025-11-30 09:05:23",
     "status": "active",
-    "active_devices": ["3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e"],
-    "expires": "2026-06-17 13:49:47"
-,
-    "last_login": "2025-11-30 09:05:23"
-  }]
+    "max_devices": 2,
+    "active_devices": [
+      "3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e"
+    ]
+  }
+]
