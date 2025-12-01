@@ -6,7 +6,7 @@
     "expires": "2026-03-05 18:57:51",
     "unlimited": false,
     "device_info": "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6",
-    "last_login": "2025-12-01 15:36:49",
+    "last_login": "2025-11-30 14:17:25",
     "status": "active",
     "max_devices": 100,
     "active_devices": [
@@ -116,7 +116,7 @@
     "expires": "2026-06-15 11:39:52",
     "unlimited": false,
     "device_info": "b909631b72a0fa57309841481f1faf1f3a4813ad29b64a6eaab823094d825a1d",
-    "last_login": "2025-12-01 14:17:52",
+    "last_login": "2025-12-01 15:39:37",
     "status": "active",
     "max_devices": 2,
     "active_devices": [
