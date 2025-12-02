@@ -152,5 +152,17 @@
     "active_devices": [
       "3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e"
     ]
+  },
+  {
+    "key": "brutal",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 5,
+    "expires": "2025-12-08 13:38:50",
+    "unlimited": false,
+    "last_login": null
   }
 ]
