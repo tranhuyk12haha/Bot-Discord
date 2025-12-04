@@ -145,7 +145,7 @@
     "type": "multi",
     "expires": "2026-06-17 13:49:47",
     "unlimited": false,
-    "device_info": "3db7bb62a1ec046a4f38b56b416bfe1726ff9bcb998d8be9eb9324214615c06e",
+    "device_info": "3bc5d9928853a35b03125cb1dc285d9b6d513ae8c482ebb23379c222790faad2",
     "last_login": "2025-12-03 10:45:21",
     "status": "active",
     "max_devices": 2,
@@ -217,3 +217,4 @@
   }
 
 ]
+
