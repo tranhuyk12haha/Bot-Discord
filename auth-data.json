@@ -269,5 +269,17 @@
     "expires": null,
     "unlimited": true,
     "last_login": "2025-12-05 13:49:30"
+  },
+  {
+    "key": "khiem2",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 2,
+    "expires": "2026-06-23 13:50:41",
+    "unlimited": false,
+    "last_login": null
   }
 ]
