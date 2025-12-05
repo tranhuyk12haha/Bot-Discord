@@ -18,22 +18,6 @@
     ]
   },
   {
-    "key": "khiem",
-    "hwid": "",
-    "type": "multi",
-    "expires": "2026-09-19 04:14:36",
-    "unlimited": false,
-    "device_info": "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862",
-    "last_login": "2025-11-27 21:37:35",
-    "status": "active",
-    "max_devices": 3,
-    "active_devices": [
-      "f39d533ea69438c1bf63d326f3374decd7a8f29614a38fa82a175f15c9ec21f9",
-      "00be1396d65e395a75284ef22550f97e6cf7cad21823e519f2cfb20bf68488a9",
-      "1abce8f4e4d6d51c8c9d6cb0f67f069e79f04b53a669c0367a570d6876ec1862"
-    ]
-  },
-  {
     "key": "dark",
     "hwid": "",
     "type": "multi",
