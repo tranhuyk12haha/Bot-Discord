@@ -321,12 +321,12 @@
     "key": "phuc",
     "hwid": "",
     "type": "single",
-    "device_info": "",
+    "device_info": "6409d3088fe8c150015366f75170a09ef4d001ad296b88eb413877e22fbba7fc",
     "status": "active",
     "active_devices": [],
     "max_devices": 1,
     "expires": null,
     "unlimited": true,
-    "last_login": null
+    "last_login": "2025-12-05 15:17:46"
   }
 ]
