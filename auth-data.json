@@ -316,5 +316,17 @@
     "expires": "2025-12-06 14:30:37",
     "unlimited": false,
     "last_login": null
+  },
+  {
+    "key": "phuc",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": null,
+    "unlimited": true,
+    "last_login": null
   }
 ]
