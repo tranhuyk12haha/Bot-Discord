@@ -5,7 +5,7 @@
     "type": "multi",
     "expires": "2026-03-05 18:57:51",
     "unlimited": false,
-    "device_info": "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6",
+    "device_info": "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6","b2dc9412068703c6d8861aa35126dfeb65cf28f97d8ae344812a6ac98e12c7"
     "last_login": "2025-12-05 21:08:38",
     "status": "active",
     "max_devices": 100,
@@ -14,7 +14,8 @@
       "10d66be367657d83491b8e9f9024a628a14e273bd2733153cf762b639958af4f",
       "3c2e70f113b7da3f78648dc6eadb07d7daf43381f37bf10558a8e5ceff19aaf3",
       "770abed0e9b2c32318995470f1c533d4c41cd9ed46309a32f1a18384d49aef5f",
-      "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6"
+      "41361353eee4f31ab07d0fda07b1b191e0530939385329254e271890b954d3d6",
+      "b2dc9412068703c6d8861aa35126dfeb65cf28f97d8ae344812a6ac98e12c7"
     ]
   },
   {
@@ -353,7 +354,7 @@
     "type": "multi",
     "device_info": "",
     "status": "active",
-    "active_devices": [],
+    "active_devices": [b2dc9412068703c6d8861aa35126dfeb65cf28f97d8ae344812a6ac98e12c7],
     "max_devices": 3,
     "expires": "2025-12-08 05:45:47",
     "unlimited": false,
