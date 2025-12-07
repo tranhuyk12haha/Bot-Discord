@@ -346,5 +346,17 @@
     "status": "active",
     "max_devices": 1,
     "active_devices": []
+  },
+  {
+    "key": "1day",
+    "hwid": "",
+    "type": "multi",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 3,
+    "expires": "2025-12-08 05:45:47",
+    "unlimited": false,
+    "last_login": null
   }
 ]
