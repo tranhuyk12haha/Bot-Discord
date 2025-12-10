@@ -4,35 +4,31 @@
     "hwid": "",
     "type": "unlimited",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "Admin",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
+    "last_login": "2025-12-10 16:23:47",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": "2025-12-08 23:24:42"
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "Bibo",
     "hwid": "",
     "type": "multi",
+    "expires": "2025-12-18 08:20:08",
     "unlimited": false,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": "2025-12-18 08:20:08"
-,
-    "last_login": null
-  }]
+    "max_devices": 1,
+    "active_devices": []
+  }
+]
