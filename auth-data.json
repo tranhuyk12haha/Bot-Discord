@@ -35,24 +35,21 @@
     "key": "khiem1",
     "hwid": "",
     "type": "single",
+    "unlimited": true,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
     "max_devices": 1,
-    "expires": null,
-    "unlimited": true,
-    "last_login": null
+    "active_devices": []
   },
   {
     "key": "thuan",
     "hwid": "",
     "type": "single",
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "max_devices": 1,
-    "expires": null,
     "unlimited": true,
-    "last_login": null
+    "device_info": "",
+    "last_login": "2025-12-11 16:58:52",
+    "status": "active",
+    "max_devices": 1,
+    "active_devices": []
   }
 ]
