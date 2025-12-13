@@ -111,5 +111,17 @@
     "expires": null,
     "unlimited": true,
     "last_login": null
+  },
+  {
+    "key": "Admin2",
+    "hwid": "",
+    "type": "single",
+    "device_info": "",
+    "status": "active",
+    "active_devices": [],
+    "max_devices": 1,
+    "expires": null,
+    "unlimited": true,
+    "last_login": null
   }
 ]
