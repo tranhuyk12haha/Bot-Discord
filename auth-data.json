@@ -10,17 +10,6 @@
     "active_devices": []
   },
   {
-    "key": "Admin",
-    "hwid": "",
-    "type": "single",
-    "unlimited": true,
-    "device_info": "",
-    "last_login": "2025-12-10 16:29:55",
-    "status": "active",
-    "max_devices": 1,
-    "active_devices": []
-  },
-  {
     "key": "Bibo",
     "hwid": "",
     "type": "multi",
