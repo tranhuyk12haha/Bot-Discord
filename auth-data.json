@@ -4,179 +4,155 @@
     "hwid": "",
     "type": "unlimited",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "Bibo",
     "hwid": "",
     "type": "multi",
+    "expires": "2025-12-18 08:20:08",
     "unlimited": false,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": "2025-12-18 08:20:08"
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "khiem1",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
+    "last_login": "2025-12-18 12:31:51",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "thuan",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
+    "last_login": "2025-12-11 17:02:06",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": "2025-12-11 17:02:06"
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "long",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "ken",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "bin",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "Admin2",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
+    "last_login": "2025-12-18 08:35:03",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": "2025-12-18 08:35:03"
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "free",
     "hwid": "",
     "type": "single",
+    "expires": "2025-12-16 03:39:10",
     "unlimited": false,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": "2025-12-16 03:39:10"
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "boo",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "an",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "longngu",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "dong",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "hieu1",
     "hwid": "",
     "type": "single",
     "unlimited": true,
-    "max_devices": 1,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": null
-,
-    "last_login": null
-  },  {
+    "max_devices": 1,
+    "active_devices": []
+  },
+  {
     "key": "FREEKENR6",
     "hwid": "",
     "type": "multi",
+    "expires": "2025-12-19 13:25:10",
     "unlimited": false,
-    "max_devices": 100,
     "device_info": "",
     "status": "active",
-    "active_devices": [],
-    "expires": "2025-12-19 13:25:10"
-,
-    "last_login": null
-  }]
+    "max_devices": 100,
+    "active_devices": []
+  }
+]
