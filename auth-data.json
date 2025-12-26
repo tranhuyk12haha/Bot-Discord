@@ -84,18 +84,6 @@
     "last_login": null
   },
   {
-    "key": "Admin2",
-    "hwid": "",
-    "type": "single",
-    "unlimited": true,
-    "max_devices": 1,
-    "device_info": "",
-    "status": "active",
-    "active_devices": [],
-    "expires": null,
-    "last_login": "2025-12-26 09:17:03"
-  },
-  {
     "key": "free",
     "hwid": "",
     "type": "single",
